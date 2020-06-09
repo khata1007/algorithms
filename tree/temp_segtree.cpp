@@ -53,7 +53,7 @@ class SegTree{
         return data[i+n-1];
     }
 };
-
+/* RMQデバッグ用
 int main(void){
     int N, Q; cin >> N >> Q;
     SegTree<long long> st(N, (1LL << 31)-1,
@@ -69,6 +69,8 @@ int main(void){
             cout << st.query(x, y+1) << endl;
         }
     }
+    cout << st[0] << endl;
 
     return 0;
 }
+*/

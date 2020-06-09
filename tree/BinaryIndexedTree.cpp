@@ -4,8 +4,6 @@
 
 using namespace std;
 
-typedef long long ll;
-
 struct BinaryIndexedTree{
 private:
     int n;
@@ -29,9 +27,6 @@ public:
 };
 
 int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    
     int N; cin >> N;
     int A[N]; for(int i = 0; i < N; i++) cin >> A[i];
     
