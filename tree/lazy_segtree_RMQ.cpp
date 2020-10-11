@@ -19,7 +19,7 @@ public:
         int sz = v.size();
         int height = ceil(log2(sz));
         n = pow(2, height);
-        node.resize(2*n-1, 0);
+        node.resize(2*n-1, INF);
         lazy.resize(2*n-1, INF);
         lazyFlag.resize(2*n-1, false);
         rep(i, sz) node[i+(n-1)] = v[i];
