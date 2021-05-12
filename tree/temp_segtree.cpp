@@ -32,7 +32,10 @@ class SegTree{
         while(n < _n){
             n *= 2;
         }
-        data = vector<T>(2*n-1, def);
+        int datasize = 2*n-1;
+        data = vector<T>(datasize);
+        for(int i = 0; i < (int) vec.size(); i++) data[i+n-1] = vec[i];
+        for(int i = n-2; i >= 0; i--) data[i] = operation(data[(i << 1) + 1], data[(i << 1) + 2]);
     }
 
     //場所i(0-idx)の値をxで更新
