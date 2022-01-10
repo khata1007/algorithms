@@ -28,3 +28,8 @@ long long COM(int n, int k){
 }
 
 //これを使うときにはCOMinit();を忘れずに
+int main(void){
+    COMinit();
+    cout << COM(30, 15) << endl;
+    return 0;
+}

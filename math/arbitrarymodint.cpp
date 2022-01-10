@@ -18,6 +18,7 @@ struct ArbitraryModInt {
 
   static int set_mod(int md) {
     mod() = md;
+    return md;
   }
 
   ArbitraryModInt &operator+=(const ArbitraryModInt &p) {
